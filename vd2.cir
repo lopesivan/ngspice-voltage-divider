@@ -1,0 +1,15 @@
+Voltage Divider
+vin 1 0 1.0
+r1 1 2 5K
+r2 2 0 15K
+
+.dc vin 0.0 1.0 .1
+.plot dc v(1)
+
+.control
+run
+hardcopy a.ps v(1),v(2)
+hardcopy b.ps v(1)-v(2),v(1)
+.endc
+
+.end
