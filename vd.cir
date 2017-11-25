@@ -1,0 +1,8 @@
+Voltage Divider
+vin 1 0 1.0
+r1 1 2 5K
+r2 2 0 5K
+
+.dc vin 0.0 1.0 .1
+.plot dc v(1)
+.end
