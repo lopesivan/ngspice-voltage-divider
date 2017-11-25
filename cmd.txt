@@ -35,13 +35,13 @@ $ ngspice vd.cir
 
 Circuit: voltage divider
 
-ngspice 1 -run
+ngspice 1 -> run
 Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
 
 
 
 No. of Data Rows : 11
-ngspice 2 -hardcopy xyPlot.ps v(1),V(2)
+ngspice 2 -> hardcopy xyPlot.ps v(1),V(2)
 
 The file "xyPlot.ps" may be printed on a postscript printer.
 ngspice 3 -> ^Dquit
